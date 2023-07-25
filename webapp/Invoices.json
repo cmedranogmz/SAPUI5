@@ -1,0 +1,68 @@
+{
+    "Invoices":[
+        {
+            "ProductName": "HDD-Samsung 250 GB",
+            "Quantity": 21,
+            "ExtendedPrice": 87.2000,
+            "ShipperName": "Fun Inc",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "B"
+        },
+        {
+            "ProductName": "Display DELL UH850 4K 27",
+            "Quantity": 4,
+            "ExtendedPrice": 40.45,
+            "ShipperName": "Fun Inc",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "A"
+        },
+        {
+            "ProductName": "Display DELL UH850 4K 65",
+            "Quantity": 5,
+            "ExtendedPrice": 1000.50,
+            "ShipperName": "ACC",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "A"
+        },
+        {
+            "ProductName": "HDD-Samsung 250 GB",
+            "Quantity": 21,
+            "ExtendedPrice": 35.2000,
+            "ShipperName": "ACC",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "C"
+        },
+        {
+            "ProductName": "HDD-Samsung 250 GB",
+            "Quantity": 21,
+            "ExtendedPrice": 26.2000,
+            "ShipperName": "Fun Inc",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "B"
+        },
+        {
+            "ProductName": "HDD-Samsung 250 GB",
+            "Quantity": 21,
+            "ExtendedPrice": 700.2000,
+            "ShipperName": "ACC",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "A"
+        },
+        {
+            "ProductName": "HDD-Samsung 250 GB",
+            "Quantity": 21,
+            "ExtendedPrice": 12.2000,
+            "ShipperName": "Fun Inc",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "A"
+        },
+        { 
+            "ProductName": "HDD-Samsung 250 GB",
+            "Quantity": 21,
+            "ExtendedPrice": 807.2000,
+            "ShipperName": "Fun Inc",
+            "ShippedDate": "2023-07-24T00:00:00",
+            "Status": "X"
+        }
+    ]
+}

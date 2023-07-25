@@ -24,7 +24,7 @@ sap.ui.define([
                 
             }, 
             
-            onShowHello: function(){
+            /** onShowHello: function(){
                 //MessageToast.show("Hello world...");
 
                 //Read text fromi18n model
@@ -33,7 +33,10 @@ sap.ui.define([
                 var sRecipient = this.getView().getModel().getProperty("/recipient/name");
                 var sMsg = oBundle.getText("helloMsg", [sRecipient]);
                 MessageToast.show(sMsg); 
-            }
-
+            }*/
+            
+            onOpenDialogHeader: function(){
+                this.getOwnerComponent().openHelloDialog();
+            } 
         });
     });
