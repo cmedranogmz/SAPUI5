@@ -8,5 +8,5 @@ sap.ui.getCore().attachInit(function () {
 		"invoices/test/unit/AllTests"
 	], function () {
 		QUnit.start();
-	});
+	})
 });

@@ -1,4 +1,11 @@
 <mvc:View controllerName="invoices.controller.InvoicesList" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+    <Panel >
+        <List headerText="{i18n>invoicesListTitle}" class="sapUiResponsiveMargin" width="auto" items="{invoiceList>/Invoices}" >
+            <items>
+                <ObjectListItem title="{invoiceList>ProductName}"/>
+            </items>
+        </List>
+    </Panel>
     <List id="invoiceList" headerText="{i18n>invoicesListTitle}" class="sapUiResponsiveMargin" width="auto" 
             items="{path: 'invoices>/Invoices', 
                     sorter: { path: 'ShipperName',
@@ -20,11 +27,13 @@
                                                     showMeasure : false
                                                 }   }"
                             numberUnit="{currency>/usd}"
-                            numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : 'Error'}">
+                            numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : 'Error'}"
+                            type="Navigation" press="viewInvoiceDetails"> 
                 <firstStatus>
                     <ObjectStatus text="{ path:'invoices>Status', formatter:'.formatter.invoiceStatus'}"/>
                 </firstStatus>
             </ObjectListItem> 
         </items> 
     </List> 
+    
 </mvc:View>

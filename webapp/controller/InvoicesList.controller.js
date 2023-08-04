@@ -40,11 +40,18 @@ function(Controller, JSONModel, InvoicesFormatter, Filter, FilterOperator) {
                 aFilter.push( new Filter("ProductName", FilterOperator.Contains, sQuery));
             };
 
-            const oList = this.getView().byId("invoiceList");
+            const oList = this.getView().byId("invoices");
             const oBinding = oList.getBinding("items");
             oBinding.filter(aFilter);
-        }
+        }, 
 
+        viewInvoiceDetails: function(oEvent){
+            const oItem = oEvent.getSource();
+            const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+            oRouter.navTo("RouteDetails", {
+                invoicePath: window.encodeURIComponent(oItem.getBindingContext("invoices").getPath().substr(1))
+            }); 
+        }
     });
 
 });

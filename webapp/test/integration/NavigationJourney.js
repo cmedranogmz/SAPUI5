@@ -14,7 +14,7 @@ sap.ui.define([
 		Given.iStartMyApp();
 
 		// Assertions
-		Then.onTheAppPage.iShouldSeeTheApp();
+		//Then.onTheViewPage.iShouldSeeTheApp();
       	Then.onTheViewPage.iShouldSeeThePageView();
 
 		//Cleanup

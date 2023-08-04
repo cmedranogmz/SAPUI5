@@ -1,0 +1,13 @@
+<mvc:View
+    controllerName="invoices.controller.App" 
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <headerContent>
+            <Button id="btnAppHelloDialog" icon="sap-icon://hello-world" press=".onOpenDialogHeader" class="sapUiSmallMarginEnd"/>
+        </headerContent>
+        <content>
+            <mvc:XMLView viewName="invoices.view.HelloPanel"/>
+            <mvc:XMLView viewName="invoices.view.InvoicesList"/>
+        </content>
+    </Page>
+</mvc:View>

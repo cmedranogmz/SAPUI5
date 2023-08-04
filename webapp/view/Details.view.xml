@@ -1,0 +1,16 @@
+<mvc:View
+    controllerName="invoices.controller.Details" 
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>detailsPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+        <ObjectHeader title="{i18n>detailsPageTitle}">
+            <attributes>
+                <ObjectAttribute text="{invoices>ProductName}"/>
+                <ObjectAttribute text="{invoices>Quantity}"/>
+                <ObjectAttribute text="{invoices>ExtendedPrice}"/>
+                <ObjectAttribute text="{invoices>ShipperName}"/>
+                <ObjectAttribute text="{invoices>ShippedDate}"/>
+                <ObjectAttribute text="{invoices>Status}"/>
+            </attributes>
+        </ObjectHeader>
+    </Page>
+</mvc:View>

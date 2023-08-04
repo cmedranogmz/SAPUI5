@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/test/Opa5"
-], function (Opa5) {
+	"sap/ui/test/Opa5",
+	"sap/ui/test/actions/Press"
+], function (Opa5, Press) {
 	"use strict";
 	var sViewName = "App";
 	
@@ -24,5 +25,4 @@ sap.ui.define([
 			}
 		}
 	});
-
 });
