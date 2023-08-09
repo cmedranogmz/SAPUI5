@@ -2,6 +2,12 @@
     controllerName="invoices.controller.App" 
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <landmarkInfo>
+            <PageAccessibleLandmarkInfo rootRole="Region" rootLabel="{i18n>overviewRootLabel}"
+                contentLabel="{i18n>overviewContentLabel}"
+                headerRole="Banner"
+                headerLabel="{i18n>overviewHeaderLabel}"/>
+        </landmarkInfo>
         <headerContent>
             <Button id="btnAppHelloDialog" icon="sap-icon://hello-world" press=".onOpenDialogHeader" class="sapUiSmallMarginEnd"/>
         </headerContent>

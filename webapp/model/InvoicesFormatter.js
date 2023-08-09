@@ -10,7 +10,7 @@ function() {
                 case 'A': return resourceBunder.getText("invoiceStatusA");
                 case 'B': return resourceBunder.getText("invoiceStatusB");
                 case 'C': return resourceBunder.getText("invoiceStatusC");
-                default : return sStatus;
+                default : return resourceBunder.getText("invoiceStatusUnknown");
             }
         }
     } 

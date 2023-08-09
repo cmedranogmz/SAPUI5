@@ -1,20 +1,34 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/m/MessageToast",
-    "sap/ui/core/Fragment"
+    "sap/ui/core/Fragment",
+    "sap/base/Log"
 ],   
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      * @param {typeof sap.m.MessageToast} MessageToast
      * @param {typeof sap.ui.core.Fragment} Fragment
+     * @param {typeof sap.base.Log} Log
      */
-    function (Controller, MessageToast, Fragment) {
+    function (Controller, MessageToast, Fragment, Log) {
         "use strict";
 
         return Controller.extend("invoices.controller.HelloPanel", {
             onInit: function () {
             
-            }, 
+            },
+
+            onBeforeRendering: function(){
+                Window.message = "LOG MESSAGE - Mensaje de error de prueba";
+                Log.info(Window.message);
+                Log.error(Window.message);
+            },
+
+            onAfterRendering: function(){
+                Window.message = "Breakpoint en vista Debug - Detiene la ejecución";
+                Log.error(Window.message);
+                //debugger;
+            },
             
             onShowHello: function(){
                 //Read text fromi18n model

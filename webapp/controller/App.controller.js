@@ -11,9 +11,12 @@ sap.ui.define([
      */
     function (Controller, MessageToast, models, ResourceModel) {
         "use strict";
-
+    
         return Controller.extend("invoices.controller.App", {
             onInit: function () {
+
+                this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
+
                 /**
                 // Set data model on the view
                 this.getView().setModel(models.createRecipient());
